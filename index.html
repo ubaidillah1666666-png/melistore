@@ -2484,7 +2484,8 @@ try{
 const nomor = formatNomor(nomorInput);
 
 const res = await fetchWithRetry(
-`https://Sidompul.paketxl.net/sidompul?nomor=${encodeURIComponent(nomor)
+`https://Sidompul.paketxl.net?nomor=$
+{encodeURIComponent(nomor)
 );
 const info = res.data?.subs_info || {};
 const packageInfo = res.data?.package_info || {};
