@@ -993,7 +993,7 @@ const stokPrivat = {
     "64K":0,
     "70K":0,
     "75K":0,
-    "85K":0,
+    "85K":1,
     "90K":0,
     "100K":0,
     "105K":1,
@@ -1081,10 +1081,10 @@ const tampilPrivat = {
 
     "78Kv3":0,
     "98K":0,
-    "53Kv3":0,
+    "53Kv3":1,
     "88Kv3":0,
     "105Kv3":0,
-    "68Kv3":0,
+    "68Kv3":1,
     "80Kv3":0,
 };
   const preOrderAktif = {
@@ -2484,8 +2484,7 @@ try{
 const nomor = formatNomor(nomorInput);
 
 const res = await fetchWithRetry(
-`https://sidompul.ciamxl.workers.dev/sidompul?nomor=${encodeURIComponent(nomor)}`
-);
+`https://Sidompul.paketxl.net/sidompul?nomor=${encodeURIComponent(nomor)
 const info = res.data?.subs_info || {};
 const packageInfo = res.data?.package_info || {};
 const packages = packageInfo.packages || [];
